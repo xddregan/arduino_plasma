@@ -1,0 +1,17 @@
+Display buttons pixels. Please note when tried to call fillCircle got no fuction in ST7735 message. Please advise on how to fix this. 
+
+ tft.fillScreen(ST77XX_BLACK);
+  tft.fillRect(54, 4, 20, 17, ST77XX_BLUE); //Run button
+  //tft.fillCircle(64, 12, 10, 17, ST77XX_BLUE); // to replace rect "RUN" button with round button
+  
+  tft.fillTriangle(36, 4, 31, 10, 41, 10, ST77XX_YELLOW); //powerup triangle
+  
+  tft.fillTriangle(36, 20, 31, 14, 41, 14, ST77XX_YELLOW); //powerdown triangle
+  tft.fillTriangle(120, 4, 116, 10, 126, 10, ST77XX_YELLOW);  //timeup triangle
+  tft.fillTriangle(120, 20, 116, 14, 126, 14, ST77XX_YELLOW);  //time down triangle
+  tft.fillRect(2, 4, 20, 17, ST77XX_YELLOW); //power button
+  tft.fillRect(89, 4, 20, 17, ST77XX_YELLOW); //time button
+  tft.fillRect(54, 108, 20, 16, ST77XX_RED); //stop button
+  //tft.fillCircle(64, 115, 10, ST77XX_RED); //to replace rect "STOP"button with round button
+  tft.fillRect(10, 108, 20, 16, ST77XX_YELLOW); //alarm button
+  tft.fillRect(98, 108, 20, 16, ST77XX_YELLOW); //HW test button

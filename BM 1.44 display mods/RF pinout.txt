@@ -1,0 +1,21 @@
+RF power pinout
+
+The RF generator is controlled thru serial port from 9 pin connector with the pinouts given below
+
+1. Pin1 (5V reference)
+
+2. Pin2 NC
+
+3. Pin3 NC
+
+4. Pin4(alarm signal)
+
+5. Pin5(GND)
+
+6. Pin6(RF output power-active high)
+
+7. Pin7(forward power, 0-3V)
+
+8. Pin8(reflected power,0-3V)
+
+9. Pin9(power setting from 0-3V for control of output power)

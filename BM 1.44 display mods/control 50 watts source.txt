@@ -1,0 +1,49 @@
+
+Control requirements for an RF plasma source: Hardware used are 28 VDC 10A supply, DC-DC converter (to power microcontroller and solenoid relay board), 3 solenoid valves, main power ON/OFF switch, safety interlock switch and a microcontroller. The microcontroller is Arduino Nano 33 IOT. User interface is thru a 1.44 inch TFT touch screen. Solenoids are for RF ON/OFF, Gas ON/OFF, cooling fan ON/OFF.
+
+A. Select time vs RF power (time in seconds and minutes and RF power linearized between 0-3 VDC corresponding to 0 to 50 watts RF power out. 
+
+After selection of time and power, pressing of Run button (on touch screen) will start the process by:
+
+1. RF ON and at the same time cooling fan ON 
+
+2. With a delay of 100 msec turn gas solenoid ON
+
+3. Display Vfwd and Vref VS time for the duration of plasma ON (please see pin description at the bottom of this page)  
+
+4. At the end of process turn RF OFF and gas OFF
+
+5. With a delay of 30 seconds turn OFF the cooling fan
+
+6. In the case of Alarm (over temp or excessive reflected power turn RF/Gas/Fan OFF and display Alarm message). Action is required by user to find the cause of alarm, fix the situation and Reset the controller. Alarm signal is when pin4 goes high.
+
+6. Go back to (A) and wait either to repeat the same process or enter a new time/power selection.
+
+
+
+For program download and communication to host, use over the air (OTA) communications of Arduino Nano
+
+
+The RF generator is controlled thru serial port from 9 pin connector with the pinouts given below
+
+1. Pin1 (5V reference)
+
+2. Pin2 NC
+
+3. Pin3 NC
+
+4. Pin4(alarm signal)
+
+5. Pin5(GND)
+
+6. Pin6(RF output power-active high)
+
+7. Pin7(forward power, 0-3V)
+
+8. Pin8(reflected power,0-3V)
+
+9. Pin9(power setting from 0-3V for control of output power)
+
+The display will provide icons for things like Run, Stop, Diagnostics (in diagnostic mode relays can be energized individually and safety interlock switch can be checked)
+
+

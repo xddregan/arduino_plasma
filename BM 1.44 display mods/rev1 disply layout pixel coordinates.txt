@@ -1,0 +1,19 @@
+co-ordinates of 128x128 layout
+
+ref is 0,0 at top left corner. numbers are in pixels location.
+
+1. Power down triangle	(2,12), (8,6), (8,18)
+2. Power up triangle	(30,6), (30,18), (36,18)
+3. Power button		(11,4), (28,4), (11,20), (28,20)
+
+4. Run button		(54,4), (74,4), (54,20), (74,20)
+
+5. time down triangle	(94,12), (100,6), (100,18)
+6. time up triangle	(126,12), (120,6), (120,18)
+7. time button		(93,6), (108,6), (93,18), (108,18)
+
+8. Stop button		(54,108), (74,108), (54,124), (74,124)
+
+9. Alarm button		(10,108), (30,108), (10,124), (30,124)
+
+HW Test button		(98,108), (118,108), (98,124), (118,124)

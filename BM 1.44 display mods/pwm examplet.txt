@@ -1,0 +1,20 @@
+PWM example
+
+Arduino Nano 33 IOT has 7 dedicated pins that can also be used as digital I/O pin such as (D2, D3, D5, D6, D7) and also 2 analog pins (A2 and A3) that can be analog I/O or used as PWM.
+
+int pwmPin = 6;
+
+void setup() {
+  pinMode(pwmPin, OUTPUT);
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  for (int i=0; i<255; i=100) {
+    analogWrite(pwmPin, i);
+    //delay(100);
+    // put your main code here, to run repeatedly:
+  }
+
+}

@@ -1,0 +1,37 @@
+co-ordinates of 128x128 layout
+
+ref is 0,0 at top left corner. numbers are in pixels location.
+
+1. Power down triangle	(10,12), (16,6), (16,12)
+2. Power up triangle	(36,4), (31,10), (41,10)
+3. Power button		(2,4), (22,4), (2,21), (22,21)
+
+4. Run button		(54,4), (74,4), (54,21), (74,21)
+
+5. time down triangle	(120,20), (116,14), (126,14)
+6. time up triangle	(120,4), (116,10), (126,10)
+7. time button		(89,4), (109,4), (89,21), (109,21)
+
+8. Stop button		(54,108), (74,108), (54,125), (74,125)
+
+9. Alarm button		(2,108), (22,108), (2,125), (22,125)
+
+HW Test button		(106,108), (126,108), (106,125), (126,125)
+
+Code for buttons
+
+ tft.fillScreen(ST77XX_BLACK);
+ tft.fillRect(54, 4, 20, 17, ST77XX_BLUE); //Run button
+//tft.fillCircle(64, 12, 10, 17, ST77XX_BLUE); // to replace rect "RUN" button with round button
+  
+  tft.fillTriangle(36, 4, 31, 10, 41, 10, ST77XX_YELLOW); //powerup triangle
+  
+  tft.fillTriangle(36, 20, 31, 14, 41, 14, ST77XX_YELLOW); //powerdown triangle
+  tft.fillTriangle(120, 4, 116, 10, 126, 10, ST77XX_YELLOW);  //timeup triangle
+  tft.fillTriangle(120, 20, 116, 14, 126, 14, ST77XX_YELLOW);  //time down triangle
+  tft.fillRect(2, 4, 20, 17, ST77XX_YELLOW); //power button
+  tft.fillRect(89, 4, 20, 17, ST77XX_YELLOW); //time button
+  tft.fillRect(54, 108, 20, 16, ST77XX_RED); //stop button
+  //tft.fillCircle(64, 115, 10, ST77XX_RED); //to replace rect "STOP"button with round button
+  tft.fillRect(2, 108, 20, 17, ST77XX_YELLOW); //alarm button
+  tft.fillRect(106, 108, 20, 17, ST77XX_YELLOW); //HW test button
