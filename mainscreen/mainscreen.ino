@@ -6,6 +6,9 @@
 #include <Adafruit_ST7789.h>
 #include <TouchScreen.h>
 #include <millisDelay.h>
+// Added a comment
+
+
 
 #define WIDTH 128
 #define HEIGHT 128
@@ -286,7 +289,3 @@ void readStartButton(TSPoint touchPoint, int touchX, int touchY)
 	}
 
 }
-
-
-
-
