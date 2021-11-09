@@ -26,7 +26,7 @@ tft.fillScreen(ST77XX_BLACK);
  tft.fillScreen(ST77XX_BLACK);
   print_text(85,80,"time(S)",1,ST77XX_BLUE);
     
- tft.fillScreen(ST77XX_BLACK);
+
   //tft.fillRect(54, 4, 20, 17, ST77XX_BLUE); //Run button
 tft.fillCircle (64, 16, 15, ST7735_BLUE); //Run button
 
@@ -46,9 +46,8 @@ tft.fillCircle (64, 16, 15, ST7735_BLUE); //Run button
   tft.fillRect(2, 108, 20, 17, ST77XX_YELLOW); //alarm button
   tft.fillRect(106, 108, 20, 17, ST77XX_YELLOW); //HW test button
    
-  delay(1000);
   
-  tft.fillScreen(ST77XX_BLACK);
+ 
   print_text(85,80,"time(S)",1,ST77XX_BLUE);
   //tft.drawRect(5,5,120,120,ST77XX_RED);
  tft.drawFastHLine(20,90,100,ST77XX_YELLOW);
